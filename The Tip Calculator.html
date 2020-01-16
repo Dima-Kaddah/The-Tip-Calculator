@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+  <title>The Tip Calculator</title>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center"> <i class="fas fa-file-invoice-dollar text-primary"></i> The <span
+        class="text-primary">Tip </span>Calculator</h1>
+
+    <form id="bill-form">
+
+      <div class="form-group">
+        <label for="amount">How much was your bill? </label>
+        <input type="number" id="amount" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="options">How was your service?</label>
+        <select name="options" id="options" class="form-control">
+          <option value="">-- Choose an Option --</option>
+          <option value="30">30% - Outstanding</option>
+          <option value="20">20% - Good</option>
+          <option value="15">15% - It was OK</option>
+          <option value="10">10% - Bad</option>
+          <option value="5">5% - Terrible</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="people">people</label>
+        <input type="number" id="people" class="form-control">
+      </div>
+      <input type="submit" value="Add Bill" class="btn btn-primary btn-block">
+
+    </form>
+
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th>bill</th>
+          <th>options</th>
+          <th>people</th>
+          <th>Tip Amount</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="bill-list"></tbody>
+    </table>
+  </div>
+  <script src="The Tip Calculator.js"></script>
+</body>
+
+</html>
